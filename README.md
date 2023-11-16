@@ -4,7 +4,7 @@ Calculadora de IMC foi um aplicativo que desenvolvi no projeto 10D Challange do 
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src="/result/image3.png" width="260">&emsp;<img src="/result/image2.png" width="260">&emsp;<img src="/result/image1.png" width="260">
+<img src="/result/image3.png" width="200">&emsp;<img src="/result/image2.png" width="200">&emsp;<img src="/result/image1.png" width="200">
 
 ## Tecnologias
 * Kotlin
