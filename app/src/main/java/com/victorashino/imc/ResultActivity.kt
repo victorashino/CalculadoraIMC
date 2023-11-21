@@ -3,6 +3,8 @@ package com.victorashino.imc
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
+import android.widget.ImageButton
 import com.victorashino.imc.databinding.ActivityMainBinding
 import com.victorashino.imc.databinding.ActivityResultBinding
 
@@ -12,12 +14,16 @@ class ResultActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         supportActionBar?.setHomeButtonEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        findViewById<ImageButton>(R.id.arrow_back).visibility = View.VISIBLE
+
+        findViewById<ImageButton>(R.id.arrow_back).setOnClickListener {
+            finish()
+        }
 
         val result = intent.getFloatExtra("EXTRA_RESULT", 0.1f)
         binding.textResult.text = result.toString()

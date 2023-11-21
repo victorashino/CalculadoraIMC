@@ -7,26 +7,28 @@
     android:orientation="vertical"
     tools:context=".ResultActivity">
 
+    <include layout="@layout/toolbar" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Seu IMC é:"
+        style="@style/Title3"
         android:textAlignment="center"
-        android:textColor="#FF3700b3"
+        android:textColor="@color/green_700"
         android:textSize="18sp"
         android:textStyle="bold" />
 
     <TextView
+        style="@style/Title1"
         android:id="@+id/text_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:textColor="@color/black"
         android:padding="16dp"
         android:textAlignment="center"
-        android:textSize="38sp"
         tools:text="27.104" />
 
     <TextView
@@ -44,8 +46,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="25dp"
+        style="@style/Title3"
         android:textStyle="bold"
-        android:textColor="#FF3700b3"
+        android:textColor="@color/green_700"
         android:text="VEJA A BAIXO A TABELA:"
         android:textSize="18sp" />
 
@@ -93,8 +96,6 @@
         Menor que 18,5	Baixo peso
         De 18,5 a 24,9	Peso normal
         De 25 a 29,9	Sobrepeso
-        De 30 a 34,9	Obesidade grau I
-        De 35 a 39.9	Obesidade grau II
-        Igual ou maior que 40	Obesidade grau III-->
+        De 30 a 34,9	Obesidade -->
 
 </LinearLayout>
